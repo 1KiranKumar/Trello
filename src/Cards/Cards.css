@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    padding: 20px;    
+    justify-content: space-around;
+    margin-left: 150px;
+}
+
+.new{
+    margin-right: 30px;
+    padding: 20px;
+    padding-left: 30%;
+}
+
+.App .column {
+    display: table-cell;
+    padding: 60px;
+     width: 30%;   
+}
+
+
+.droppable-col {
+    width: 100%;
+    background-color: rgb(78, 239, 121);
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.button{
+    width: 20%;
+    margin: 10px 0;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: rgb(39, 145, 238);
+    color: white;
+;
+}
+
+.button:hover{
+    background-color:rgb(166, 225, 76);
+    transition:.6s;
+    color:black
+}
+
+.item:hover{
+    box-shadow:0 0 5px black;
+    transform: scale(1.03);
+}
+
+.input{
+    width: 20%;
+    margin: 5px 10px;
+    height: 35px;
+    border-radius: 9px;
+    background-color: rgb(199, 153, 245);
+    color: rgb(12, 2, 2);
+}
+
+.item {
+    margin-bottom: 10px;
+    background-color: rgb(154, 188, 255);
+    color: black;    
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 7px;
+    transition: 0.2s;
+    word-wrap: break-word;
+    width: 200px;
+    margin-left: 20px;
+    
+}
+
+.item.dragging {
+    background-color: rgb(221, 128, 94);
+}
